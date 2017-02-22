@@ -8,16 +8,13 @@
 
 import UIKit
 
-//Gör till TableView och skicka vidare till en ytterliga viewController
-
 class ResultViewController: UIViewController {
 
-    @IBOutlet weak var enteredString: UILabel!
     
+    @IBOutlet weak var textField: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.enteredString.text = searchedWords
+        getFoodInfo(number: Int(self.title!)!)
 
     }
 
@@ -36,5 +33,37 @@ class ResultViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func getFoodInfo(number: Int) {
+        
+        let urlString = "http://matapi.se/foodstuff/\(number)"
+        
+        if let safeUrlString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
+            let url = URL(string : safeUrlString) {
+            let request = URLRequest(url: url)
+            let task = URLSession.shared.dataTask(with: request){(data: Data?, response: URLResponse?, error: Error?) in
+                if let actualData = data {
+                    let jsonOptions = JSONSerialization.ReadingOptions()
+                    do {
+                        if let parsed = try JSONSerialization.jsonObject(with: actualData, options: jsonOptions) as? [String:Any] {
+                            
+                            print(parsed)
+                            
+                        }
+                    } catch let parseError {
+                        //                        NSLog("Failed to parse JSON: \(parseError)")
+                    }
+                } else {
+                    NSLog("No data received")
+                }
+            }
+            task.resume()
+            
+        }
+
+        
+        
+    }
+    
 
 }

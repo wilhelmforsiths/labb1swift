@@ -6,6 +6,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,44 +24,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqk-4i-H6b">
-                                <rect key="frame" x="122" y="424" width="131" height="117"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Hw-uE-L51">
+                                <rect key="frame" x="16" y="246" width="291" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thq-jS-ns3">
+                                <rect key="frame" x="294" y="231" width="65" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="niK-zH-YGG"/>
+                                </constraints>
+                                <state key="normal" title="Sök"/>
+                                <connections>
+                                    <action selector="searchButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l56-kX-u31"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food_logo" translatesAutoresizingMaskIntoConstraints="NO" id="QpS-eG-l4s">
+                                <rect key="frame" x="67" y="72" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqk-4i-H6b">
+                                <rect key="frame" x="122" y="484" width="131" height="117"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="cGo-k8-ars"/>
+                                    <constraint firstAttribute="height" constant="117" id="xhk-zu-bhf"/>
+                                </constraints>
                                 <state key="normal" title="Sparade data"/>
                                 <connections>
                                     <segue destination="oYy-9C-xEw" kind="show" id="CmJ-X4-Un5"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Hw-uE-L51">
-                                <rect key="frame" x="59" y="246" width="194" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="searchFieldChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ZtP-4x-Jdw"/>
-                                </connections>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thq-jS-ns3">
-                                <rect key="frame" x="294" y="232" width="65" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sök"/>
-                                <connections>
-                                    <action selector="onButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZRK-OR-6O0"/>
-                                    <segue destination="mEl-dz-60O" kind="show" identifier="segue" id="LJI-KU-eWM"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Hw-uE-L51" firstAttribute="top" secondItem="QpS-eG-l4s" secondAttribute="bottom" constant="46" id="18M-xH-fkp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iqk-4i-H6b" secondAttribute="bottom" constant="66" id="98B-9w-enm"/>
+                            <constraint firstItem="QpS-eG-l4s" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="9rh-cc-SIU"/>
+                            <constraint firstItem="3Hw-uE-L51" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Azk-bK-U1a"/>
+                            <constraint firstItem="QpS-eG-l4s" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="EpR-4G-o3H"/>
+                            <constraint firstItem="thq-jS-ns3" firstAttribute="top" secondItem="QpS-eG-l4s" secondAttribute="bottom" constant="31" id="K6g-JS-u0J"/>
+                            <constraint firstItem="QpS-eG-l4s" firstAttribute="trailing" secondItem="3Hw-uE-L51" secondAttribute="trailing" id="LYd-Tg-hhF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="thq-jS-ns3" secondAttribute="bottom" constant="378" id="Oo5-sD-S7Q"/>
+                            <constraint firstItem="3Hw-uE-L51" firstAttribute="baseline" secondItem="thq-jS-ns3" secondAttribute="baseline" id="Ulp-q8-kBD"/>
+                            <constraint firstItem="QpS-eG-l4s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z8t-hP-s0d"/>
+                            <constraint firstItem="thq-jS-ns3" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="axn-Ul-9dE"/>
+                            <constraint firstItem="3Hw-uE-L51" firstAttribute="baseline" secondItem="thq-jS-ns3" secondAttribute="firstBaseline" id="hgZ-q7-W8B"/>
+                            <constraint firstItem="QpS-eG-l4s" firstAttribute="centerX" secondItem="iqk-4i-H6b" secondAttribute="centerX" id="oKb-Ai-tGb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Iud-qa-4Lu"/>
                     <connections>
                         <outlet property="wordEntered" destination="3Hw-uE-L51" id="d71-TG-DJE"/>
+                        <segue destination="hRN-51-jbn" kind="show" identifier="segue" id="sNa-lN-SY0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="429.60000000000002" y="-260.41979010494754"/>
+            <point key="canvasLocation" x="869.60000000000002" y="-369.26536731634184"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ROm-lP-ycc">
@@ -99,23 +121,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ny sökning" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHs-xZ-PpO">
-                                <rect key="frame" x="128" y="283" width="119" height="88"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3CI-cX-IQ4">
+                                <rect key="frame" x="16" y="206" width="343" height="255"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="enteredString" destination="qHs-xZ-PpO" id="Ff5-K7-8Cx"/>
+                        <outlet property="textField" destination="3CI-cX-IQ4" id="xPg-ig-SkE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aGM-At-bi3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1308" y="-254.12293853073464"/>
+            <point key="canvasLocation" x="2125.5999999999999" y="405.24737631184411"/>
+        </scene>
+        <!--Result Table Controller-->
+        <scene sceneID="aM2-aZ-ZNd">
+            <objects>
+                <tableViewController id="hRN-51-jbn" customClass="ResultTableController" customModule="Labb1Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Yoi-iP-bQ5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="VuT-hC-xIk" customClass="FoodTableViewCell" customModule="Labb1Swift" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VuT-hC-xIk" id="WOH-xx-FOW">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="mEl-dz-60O" kind="show" id="aKZ-dV-l3d"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hRN-51-jbn" id="m3X-9i-CTG"/>
+                            <outlet property="delegate" destination="hRN-51-jbn" id="fpe-4N-Qvu"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zlt-Cb-Nsf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1308" y="407"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hSH-9Q-eAA">
@@ -134,4 +188,7 @@
             <point key="canvasLocation" x="-403" y="-259"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="food_logo" width="256" height="256"/>
+    </resources>
 </document>
