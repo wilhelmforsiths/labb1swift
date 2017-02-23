@@ -9,7 +9,8 @@
 import UIKit
 
 class ResultTableController: UITableViewController {
-
+    
+    var kcal : Float = 0
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +19,10 @@ class ResultTableController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    func shorterString(food1 : Food, food2 : Food) -> Bool {
+        return food1.name.characters.count < food2.name.characters.count
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,12 +45,62 @@ class ResultTableController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FoodTableViewCell
+        
+        let nutrientsInList : [Food] = foundNutrients.sorted(by: shorterString)
 
-        cell.name = foundNutrients[indexPath.row].name
-        cell.number = foundNutrients[indexPath.row].number
-        cell.textLabel?.text = "\(foundNutrients[indexPath.row].name)"
+        cell.name = nutrientsInList[indexPath.row].name
+        cell.number = nutrientsInList[indexPath.row].number
+        cell.nameLabel.text = "\(nutrientsInList[indexPath.row].name)"
+        cell.kcalLabel.text = "\(getKcalValue(cell: cell)) kcal"
+        cell.kcalLabel.text = "\(Int(kcal)) kcal"
 
         return cell
+    }
+    
+    func getKcalValue(cell : FoodTableViewCell) {
+        
+        //Lyckas inte hämta någon data. Lös varför!
+        
+        let urlString = "http://matapi.se/foodstuff/\(cell.number!)"
+        var kcalValue : Float?
+        if let safeUrlString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
+            let url = URL(string : safeUrlString) {
+            let request = URLRequest(url: url)
+            let task = URLSession.shared.dataTask(with: request){(data: Data?, response: URLResponse?, error: Error?) in
+                if let actualData = data {
+                    let jsonOptions = JSONSerialization.ReadingOptions()
+                    do {
+                        if let parsed = try JSONSerialization.jsonObject(with: actualData, options: jsonOptions) as? [String:Any] {
+                            
+                            //print(parsed)
+                            
+                            if let dictionary = parsed["nutrientValues"] as? [String:Any] {
+                                kcalValue = dictionary["energyKcal"] as? Float
+                                
+                                DispatchQueue.main.async {
+                                    //let myString = String(describing: kcalValue)
+                                    //cell.kcalLabel.text = myString
+                                    self.kcal = kcalValue!
+                                }
+                            } else {
+                                print("Couldn't parse NutrientValues")
+                                self.kcal = 0
+                            }
+                            
+                        }
+                    } catch let parseError {
+                                                NSLog("Failed to parse JSON: \(parseError)")
+                    }
+                } else {
+                    NSLog("No data received")
+                }
+
+            }
+            task.resume()
+            
+        }
+        
+    
     }
     
 
@@ -91,8 +146,11 @@ class ResultTableController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if let cell = sender as? FoodTableViewCell {
-            segue.destination.title = cell.number?.description
+        if let cell = (sender as? FoodTableViewCell) {
+            if segue.identifier == "segue2" {
+                var resultDestination = segue.destination as! ResultViewController
+                resultDestination.foodID = cell.number
+            }
         }
 
     }

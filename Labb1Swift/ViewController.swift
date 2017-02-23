@@ -8,7 +8,7 @@
 
 import UIKit
 
-var foundNutrients : [food] = []
+var foundNutrients : [Food] = []
 
 class ViewController: UIViewController {
     
@@ -65,10 +65,10 @@ class ViewController: UIViewController {
     }
     
     func doParse(dictionaries: [[String:Any]]) {
-        var foods : [food] = []
+        var foods : [Food] = []
         
         for item in dictionaries {
-            let foundFood : food = food(number: item["number"] as! Int, name: item["name"] as! String)
+            let foundFood : Food = Food(number: item["number"] as! Int, name: item["name"] as! String)
             foods.append(foundFood)
         }
         

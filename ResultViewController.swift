@@ -10,18 +10,73 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    var foodID : Int?
+    var protein : Float?
+    var carbohydrates : Float?
+    var fat : Float?
+    var kcal : Float?
     
     @IBOutlet weak var textField: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        getFoodInfo(number: Int(self.title!)!)
+        getFoodInfo()
 
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func getFoodInfo() {
+    let urlString = "http://matapi.se/foodstuff/\(foodID!)"
+    var kcalValue : Float?
+    var proteinValue : Float?
+    var carbohydratesValue : Float?
+    var fatValue : Float?
+    if let safeUrlString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
+    let url = URL(string : safeUrlString) {
+        let request = URLRequest(url: url)
+        let task = URLSession.shared.dataTask(with: request){(data: Data?, response: URLResponse?, error: Error?) in
+            if let actualData = data {
+                let jsonOptions = JSONSerialization.ReadingOptions()
+                do {
+                    if let parsed = try JSONSerialization.jsonObject(with: actualData, options: jsonOptions) as? [String:Any] {
+                        
+                        //print(parsed)
+                        
+                        if let dictionary = parsed["nutrientValues"] as? [String:Any] {
+                            kcalValue = dictionary["energyKcal"] as? Float
+                            proteinValue = dictionary["protein"] as? Float
+                            carbohydratesValue = dictionary["carbohydrates"] as? Float
+                            fatValue = dictionary["fat"] as? Float
+                            
+                            DispatchQueue.main.async {
+                                self.kcal = kcalValue!
+                                self.protein = proteinValue
+                                self.carbohydrates = carbohydratesValue
+                                self.fat = fatValue
+                                print("\(self.fat)")
+                                print("\(self.protein)")
+                                print("\(self.carbohydrates)")
+                                print("\(self.kcal)")
+                                
+                                
+                                
+                            }
+                        } else {
+                            print("Couldn't parse NutrientValues")
+                        }
+                        
+                    }
+                } catch let parseError {
+                    NSLog("Failed to parse JSON: \(parseError)")
+                }
+            } else {
+                NSLog("No data received")
+            }
+            
+        }
+        task.resume()
+        
     }
+}
+
     
 
     /*
@@ -34,36 +89,4 @@ class ResultViewController: UIViewController {
     }
     */
     
-    func getFoodInfo(number: Int) {
-        
-        let urlString = "http://matapi.se/foodstuff/\(number)"
-        
-        if let safeUrlString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
-            let url = URL(string : safeUrlString) {
-            let request = URLRequest(url: url)
-            let task = URLSession.shared.dataTask(with: request){(data: Data?, response: URLResponse?, error: Error?) in
-                if let actualData = data {
-                    let jsonOptions = JSONSerialization.ReadingOptions()
-                    do {
-                        if let parsed = try JSONSerialization.jsonObject(with: actualData, options: jsonOptions) as? [String:Any] {
-                            
-                            print(parsed)
-                            
-                        }
-                    } catch let parseError {
-                        //                        NSLog("Failed to parse JSON: \(parseError)")
-                    }
-                } else {
-                    NSLog("No data received")
-                }
-            }
-            task.resume()
-            
-        }
-
-        
-        
-    }
-    
-
 }
