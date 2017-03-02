@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A117FAD91E5B376D00FC31B5 /* ResultTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117FAD81E5B376D00FC31B5 /* ResultTableController.swift */; };
+		A1F23A131E65AB96000DEB3F /* FavouritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F23A121E65AB96000DEB3F /* FavouritesTableViewController.swift */; };
+		A1F2E5E91E682D80007E7806 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F2E5E81E682D80007E7806 /* SWRevealViewController.m */; };
 		A1F3C2621E5C4F3200225F63 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F3C2611E5C4F3200225F63 /* Food.swift */; };
 		A1F3C2641E5C7BE400225F63 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F3C2631E5C7BE400225F63 /* FoodTableViewCell.swift */; };
 		A1F409791E55A4940059B4F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F409781E55A4940059B4F6 /* AppDelegate.swift */; };
@@ -20,6 +22,10 @@
 
 /* Begin PBXFileReference section */
 		A117FAD81E5B376D00FC31B5 /* ResultTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableController.swift; sourceTree = "<group>"; };
+		A1F23A121E65AB96000DEB3F /* FavouritesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesTableViewController.swift; sourceTree = "<group>"; };
+		A1F2E5E61E682D80007E7806 /* Labb1Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Labb1Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		A1F2E5E71E682D80007E7806 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		A1F2E5E81E682D80007E7806 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		A1F3C2611E5C4F3200225F63 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		A1F3C2631E5C7BE400225F63 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
 		A1F409751E55A4940059B4F6 /* Labb1Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Labb1Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +49,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1F2E5E51E682D08007E7806 /* SWRevealGroup */ = {
+			isa = PBXGroup;
+			children = (
+				A1F2E5E71E682D80007E7806 /* SWRevealViewController.h */,
+				A1F2E5E81E682D80007E7806 /* SWRevealViewController.m */,
+				A1F2E5E61E682D80007E7806 /* Labb1Swift-Bridging-Header.h */,
+			);
+			name = SWRevealGroup;
+			sourceTree = "<group>";
+		};
 		A1F4096C1E55A4930059B4F6 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +78,7 @@
 		A1F409771E55A4940059B4F6 /* Labb1Swift */ = {
 			isa = PBXGroup;
 			children = (
+				A1F2E5E51E682D08007E7806 /* SWRevealGroup */,
 				A1F409781E55A4940059B4F6 /* AppDelegate.swift */,
 				A1F4097A1E55A4940059B4F6 /* ViewController.swift */,
 				A1F4098C1E55AEEA0059B4F6 /* ResultViewController.swift */,
@@ -72,6 +89,7 @@
 				A117FAD81E5B376D00FC31B5 /* ResultTableController.swift */,
 				A1F3C2611E5C4F3200225F63 /* Food.swift */,
 				A1F3C2631E5C7BE400225F63 /* FoodTableViewCell.swift */,
+				A1F23A121E65AB96000DEB3F /* FavouritesTableViewController.swift */,
 			);
 			path = Labb1Swift;
 			sourceTree = "<group>";
@@ -108,6 +126,7 @@
 				TargetAttributes = {
 					A1F409741E55A4930059B4F6 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -151,9 +170,11 @@
 				A1F4097B1E55A4940059B4F6 /* ViewController.swift in Sources */,
 				A117FAD91E5B376D00FC31B5 /* ResultTableController.swift in Sources */,
 				A1F3C2621E5C4F3200225F63 /* Food.swift in Sources */,
+				A1F2E5E91E682D80007E7806 /* SWRevealViewController.m in Sources */,
 				A1F409791E55A4940059B4F6 /* AppDelegate.swift in Sources */,
 				A1F4098D1E55AEEA0059B4F6 /* ResultViewController.swift in Sources */,
 				A1F3C2641E5C7BE400225F63 /* FoodTableViewCell.swift in Sources */,
+				A1F23A131E65AB96000DEB3F /* FavouritesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,10 +295,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Labb1Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WF.Labb1Swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Labb1Swift/Labb1Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -286,10 +311,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Labb1Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WF.Labb1Swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Labb1Swift/Labb1Swift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

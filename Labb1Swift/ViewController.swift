@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Ultimate Nutrition Finder 5000"
+        self.title = "Disco Nutrition Calculator"
     }
     
     override func didReceiveMemoryWarning() {
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
                             
                         }
                     } catch let parseError {
-                        //                        NSLog("Failed to parse JSON: \(parseError)")
+                                                print("Failed to parse JSON: \(parseError)")
                     }
                 } else {
                     NSLog("No data received")

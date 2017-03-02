@@ -15,11 +15,33 @@ class ResultViewController: UIViewController {
     var carbohydrates : Float?
     var fat : Float?
     var kcal : Float?
+    var name : String?
     
+    var party : Bool = true
+    var favourite : Bool = false
+    
+    var dynamicAnimator : UIDynamicAnimator!
+    var gravity : UIGravityBehavior!
+    
+    @IBOutlet weak var stopPartyButton: UIButton!
+    @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var discoBall: UIImageView!
+    @IBOutlet weak var navigationBar: UINavigationItem!
+
+    @IBOutlet weak var kCalLabel: UILabel!
+    @IBOutlet weak var carbLabel: UILabel!
+    @IBOutlet weak var proteinLabel: UILabel!
+    @IBOutlet weak var fatLabel: UILabel!
     @IBOutlet weak var textField: UITextView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         getFoodInfo()
+        favourite = isFoodFavourite()
+        if favourite {
+            saveButton.setTitle("Ta bort från favoriter", for: .normal)
+        }
 
     }
     
@@ -45,18 +67,14 @@ class ResultViewController: UIViewController {
                             proteinValue = dictionary["protein"] as? Float
                             carbohydratesValue = dictionary["carbohydrates"] as? Float
                             fatValue = dictionary["fat"] as? Float
+                            self.kcal = kcalValue!
+                            self.protein = proteinValue!
+                            self.carbohydrates = carbohydratesValue!
+                            self.fat = fatValue!
+
                             
                             DispatchQueue.main.async {
-                                self.kcal = kcalValue!
-                                self.protein = proteinValue
-                                self.carbohydrates = carbohydratesValue
-                                self.fat = fatValue
-                                print("\(self.fat)")
-                                print("\(self.protein)")
-                                print("\(self.carbohydrates)")
-                                print("\(self.kcal)")
-                                
-                                
+                                self.refreshGUI()
                                 
                             }
                         } else {
@@ -76,8 +94,102 @@ class ResultViewController: UIViewController {
         
     }
 }
+    func refreshGUI() {
+        kCalLabel.text = "\(kcal!) kcal/100g"
+        carbLabel.text = "\(carbohydrates!) g/100g"
+        proteinLabel.text = "\(protein!) g/100g"
+        fatLabel.text = "\(fat!) g/100g"
+        navigationBar.title = "\(name!)"
+        
+        if party {
+            UIView.animate(withDuration: 0.25, delay: 0, options: UIViewAnimationOptions.allowUserInteraction, animations: {
+                self.view.backgroundColor = UIColor.green
+            }) {
+                finished in
+                UIView.animate(withDuration: 0.25, delay: 0, options: UIViewAnimationOptions.allowUserInteraction, animations: {
+                    if self.party {
+                        self.view.backgroundColor = UIColor.red
+                    }
+                    
+                }) {
+                    finished in
+                    self.refreshGUI()
+                }
+            }
+        }
+        
+        
+    }
 
+    @IBAction func takePhoto(_ sender: UIBarButtonItem) {
+                
+    }
+   
+   
+    @IBAction func saveButtonClicked(_ sender: UIButton) {
+        if favourite {
+            deleteSavedNutrition()
+            saveButton.setTitle("Spara näringsvärde", for: .normal)
+            favourite = false
+        } else {
+            saveNutrition()
+            saveButton.setTitle("Ta bort från favoriter", for: .normal)
+            favourite = true
+        }
+
+    }
     
+    
+    func saveNutrition() {
+        var savedFoodIDs : [Int] = []
+        if let food = UserDefaults.standard.object(forKey: "savedFoodIDs") as? [Int] {
+            savedFoodIDs = food
+        } else {
+            savedFoodIDs = []
+        }
+        
+        savedFoodIDs.append(foodID!)
+        UserDefaults.standard.set(savedFoodIDs, forKey: "savedFoodIDs")
+    }
+    
+    func deleteSavedNutrition() {
+        var savedFoodIDs : [Int] = []
+        if let food = UserDefaults.standard.object(forKey: "savedFoodIDs") as? [Int] {
+            savedFoodIDs = food
+        } else {
+            savedFoodIDs = [foodID!]
+        }
+        
+        savedFoodIDs = savedFoodIDs.filter{$0 != foodID!}
+        UserDefaults.standard.set(savedFoodIDs, forKey: "savedFoodIDs")
+
+    }
+    
+    func isFoodFavourite() -> Bool {
+        let favourites : [Int] = UserDefaults.standard.object(forKey: "savedFoodIDs") as! [Int]
+        
+        for fav in favourites {
+            if foodID! == fav {
+                return true
+            }
+        }
+        
+        return false
+        
+    }
+    
+    @IBAction func stopTheParty(_ sender: UIButton) {
+        UIView.animate(withDuration: 2.5, animations: {
+            self.view.backgroundColor = UIColor.black
+        })
+        
+        dynamicAnimator = UIDynamicAnimator(referenceView: view)
+        gravity = UIGravityBehavior(items: [discoBall])
+        dynamicAnimator.addBehavior(gravity)
+        
+        party = false
+        stopPartyButton.isHidden = true
+    }
 
     /*
     // MARK: - Navigation

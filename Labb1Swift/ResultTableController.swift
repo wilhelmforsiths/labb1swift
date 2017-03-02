@@ -20,6 +20,9 @@ class ResultTableController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    override func viewDidAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
     
     func shorterString(food1 : Food, food2 : Food) -> Bool {
         return food1.name.characters.count < food2.name.characters.count
@@ -51,8 +54,13 @@ class ResultTableController: UITableViewController {
         cell.name = nutrientsInList[indexPath.row].name
         cell.number = nutrientsInList[indexPath.row].number
         cell.nameLabel.text = "\(nutrientsInList[indexPath.row].name)"
-        cell.kcalLabel.text = "\(getKcalValue(cell: cell)) kcal"
-        cell.kcalLabel.text = "\(Int(kcal)) kcal"
+        getKcalValue(cell: cell)
+        if cell.kcal != 0 {
+            cell.kcalLabel.text = "\(cell.kcal) kcal"
+        } else {
+            cell.kcalLabel.text = "Loading..."
+        }
+        
 
         return cell
     }
@@ -72,19 +80,15 @@ class ResultTableController: UITableViewController {
                     do {
                         if let parsed = try JSONSerialization.jsonObject(with: actualData, options: jsonOptions) as? [String:Any] {
                             
-                            //print(parsed)
-                            
                             if let dictionary = parsed["nutrientValues"] as? [String:Any] {
                                 kcalValue = dictionary["energyKcal"] as? Float
                                 
                                 DispatchQueue.main.async {
-                                    //let myString = String(describing: kcalValue)
-                                    //cell.kcalLabel.text = myString
-                                    self.kcal = kcalValue!
+                                    cell.kcal = Int(kcalValue!)
                                 }
                             } else {
                                 print("Couldn't parse NutrientValues")
-                                self.kcal = 0
+                                cell.kcal = 0
                             }
                             
                         }
@@ -148,8 +152,9 @@ class ResultTableController: UITableViewController {
         // Pass the selected object to the new view controller.
         if let cell = (sender as? FoodTableViewCell) {
             if segue.identifier == "segue2" {
-                var resultDestination = segue.destination as! ResultViewController
+                let resultDestination = segue.destination as! ResultViewController
                 resultDestination.foodID = cell.number
+                resultDestination.name = cell.name
             }
         }
 
