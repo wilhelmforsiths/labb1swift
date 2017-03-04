@@ -7,8 +7,9 @@ class FoodTableViewCell: UITableViewCell {
     var name : String?
     var number : Int?
     var kcal : Int = 0
-    @IBOutlet weak var nameLabel: UILabel!
+    
     @IBOutlet weak var kcalLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     
     
     override func awakeFromNib() {

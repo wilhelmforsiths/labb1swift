@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>FrameAccessor.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GraphKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MKFoundationKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Labb1Swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>16D2FB21149A0326DAFF1E2A9DD2965E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4B3F2EB96F31BCC685112ADC8D4DA003</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BF1258B878BFA89993BC8FEA5ACA97E4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E80A5576C4C60664CB1460BD435D2C66</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

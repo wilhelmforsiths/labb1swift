@@ -12,12 +12,14 @@ var foundNutrients : [Food] = []
 
 class ViewController: UIViewController {
     
+    
     @IBOutlet weak var wordEntered: UITextField!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Disco Nutrition Calculator"
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -74,6 +76,13 @@ class ViewController: UIViewController {
         
         foundNutrients = foods
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let resultDestination : ResultTableController = segue.destination as? ResultTableController {
+            resultDestination.foodResultArray = foundNutrients
+        }
     }
 }
 

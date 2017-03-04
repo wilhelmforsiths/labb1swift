@@ -1,0 +1,1000 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002F8B606074D81B994194BBC22249F4 /* GraphKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D5CABA88BA84C8EF74012BCAE36BA2C /* GraphKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03EB08F83FEA373BD2CAE11BBB5ACF86 /* NSArray+MK_Misc.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA6BD533E0F30181E2F9FDE3B0C465 /* NSArray+MK_Misc.m */; };
+		04B0C4B78A1E349725E670C4B4C1F5FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89061F125CD862CB35FEFCEB685D2FBD /* Foundation.framework */; };
+		0A5FFE3D90E3F74725E34AC0221B7E75 /* GKBar.h in Headers */ = {isa = PBXBuildFile; fileRef = F0FA1502281C2345E80979C3D4385805 /* GKBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		148B5E5E99903DC610D644FF585A9FA2 /* GraphKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C120F072B1F255A062361ADACF7E056 /* GraphKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14D14E2B0D18B4E2FD2F5BC51F50AFA1 /* FrameAccessor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E2F25AACC10ED44F24A39DDCB508582F /* FrameAccessor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C89D5D70D5A1FC57F7BB3A71FD676E0 /* FrameAccessor.h in Headers */ = {isa = PBXBuildFile; fileRef = BAD3811F0146633B53389659E0876B8E /* FrameAccessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E7DCA15F80B5133DAE5D4C6B53020F0 /* NSArray+MK_Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 4695CA6EEBD440C36AEE4B0F7673F18D /* NSArray+MK_Block.m */; };
+		200374E3882D88B9D3F755652E24730A /* GKBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AD85B926ABD6CCC8D71FE1A18585BE24 /* GKBar.m */; };
+		2C5F0758383F4AACF40F87315A60DD2B /* GKBarGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = D9FD65ECE68B2B30C16EB83394701C5F /* GKBarGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DAF7123E4AB08FAB7CA6D0016E428F4 /* NSMutableArray+MK_Misc.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B42BDF9CF876BD950128EADC1EEB515 /* NSMutableArray+MK_Misc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37CF3873E7D4B520CAC457B054A0ED01 /* ViewFrameAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = E89FD4DCB642B526674CF0BB4FE8D97F /* ViewFrameAccessor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3A391D3D14A2845BCD33B3DF9B980A94 /* ScrollViewFrameAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C4FD16DEB9134CE6226CC0D922F15A /* ScrollViewFrameAccessor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4A012DB9A4F03DE529D83B318B680C6C /* NSMutableArray+MK_Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CC9097438E7F85520ABA2CEFFB1416 /* NSMutableArray+MK_Stack.m */; };
+		4C37AE2CB013AA961886B578EE13439B /* ScrollViewFrameAccessor.h in Headers */ = {isa = PBXBuildFile; fileRef = FC5FA4B250B6704218561ACD0CF2D723 /* ScrollViewFrameAccessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FF36D5EE12006792EED583A7CCFA1CA /* MKFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28AD66BF6E06F5A99F51E64867256E5 /* MKFoundationKit.framework */; };
+		52151629123855F637CB72BCEA42041E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89061F125CD862CB35FEFCEB685D2FBD /* Foundation.framework */; };
+		53A03668C24FAD1636447B4B494BC6DF /* NSMutableArray+MK_Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = C195055C07FE1E180BA0DA5EBB9376DC /* NSMutableArray+MK_Queue.m */; };
+		577E25DB7BD4EB6524831CE13BE953DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89061F125CD862CB35FEFCEB685D2FBD /* Foundation.framework */; };
+		620940CF4E7BA72BAEBE087C7AF02696 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89061F125CD862CB35FEFCEB685D2FBD /* Foundation.framework */; };
+		74397C527AC26B8783291116864196AF /* NSArray+MK_Misc.h in Headers */ = {isa = PBXBuildFile; fileRef = 12D4EB62F8655C4CBA7AC4D818DE6370 /* NSArray+MK_Misc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7590B1A0FA06058423DD9D49E7CDD204 /* ViewFrameAccessor.h in Headers */ = {isa = PBXBuildFile; fileRef = F0B6F8B68A67BCF2772F8E83314D71B5 /* ViewFrameAccessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81A9C547631610148BB6A006588DD6BA /* Pods-Labb1Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E55DD478A3C5E35DE6608930EA2822F1 /* Pods-Labb1Swift-dummy.m */; };
+		81DC8CF0E8FC5E462CC56E9E5FA7A5FB /* NSArray+MK.h in Headers */ = {isa = PBXBuildFile; fileRef = B87E04EA4163CCEA83A030EFC911CB86 /* NSArray+MK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B91F662B0E247D930A8C0003976714D /* NSMutableArray+MK_Stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A285583471D718A585854870CD536E6 /* NSMutableArray+MK_Stack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4DD728B4AEA4CF4FC7E59F9D87E01D8 /* UIColor+GraphKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AB4A48EACE57262287CBEB1BE13ACE /* UIColor+GraphKit.m */; };
+		AC6059C048EBF9BEA65B242617204838 /* NSMutableArray+MK_Queue.h in Headers */ = {isa = PBXBuildFile; fileRef = 487BC91E560160727A02D55365BEB04C /* NSMutableArray+MK_Queue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B341E3BD714A17C942E32AE79473EA9A /* GKLineGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 59301EA8E869031D2D3F73AF5B283826 /* GKLineGraph.m */; };
+		B3C1BEDF10E738B99C73719D2065411E /* UIColor+GraphKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 596077014877BAF128EEB5DC256CC75E /* UIColor+GraphKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA43566B4D0D882E845469A4092C5A24 /* GKLineGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = C90B612536ED6E6BAE487253061A2EE9 /* GKLineGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCA088C9F633EDFA75A21285F3768A37 /* NSMutableArray+MK_Misc.m in Sources */ = {isa = PBXBuildFile; fileRef = D285915A249830A579AA0A5CECFA7554 /* NSMutableArray+MK_Misc.m */; };
+		C01D024EFBB23CA5E355C4241B3A9574 /* FrameAccessor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039016E0517DB08B3B33F4AC98CEAF0C /* FrameAccessor.framework */; };
+		C40E00EBA2BD1BB934AC7453E263952D /* MKFoundationKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50954A052223645E143FEAFBB76FF5D6 /* MKFoundationKit-dummy.m */; };
+		C744B618AAC6AEFD3310D2590A2CFD8D /* GKBarGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B924DA4A3DE5AF23E88CCF3AAD8AE3C /* GKBarGraph.m */; };
+		D86342D4DEE5D219C9EF8161D036B6C7 /* Pods-Labb1Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F2C9843206AC08FE13130CE32CDEBB3 /* Pods-Labb1Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD16420C2A6242B30748682ADE31C4ED /* NSArray+MK_Block.h in Headers */ = {isa = PBXBuildFile; fileRef = 1517FA4F29A79328383C9D68852415C1 /* NSArray+MK_Block.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDE5109A06DDDE873435D166B76290A6 /* FrameAccessor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EF63D02BE97ADC487E2C2CED78BC05 /* FrameAccessor-dummy.m */; };
+		E4395053B942BBC47001525FA950E7F0 /* MKFoundationKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76EC39D06E212BDBF4E42DA104F50337 /* MKFoundationKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2710292278FB96F34731DF206379BF0 /* GraphKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3997DE1594A4156D2AA98D19514033 /* GraphKit-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		004BFB329AD396B196EB68477C084D2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E80A5576C4C60664CB1460BD435D2C66;
+			remoteInfo = GraphKit;
+		};
+		044D380B3B1BA161B2DE9B7736562E33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF1258B878BFA89993BC8FEA5ACA97E4;
+			remoteInfo = FrameAccessor;
+		};
+		6F888D63657B8A0FB35C772C52FC684A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B3F2EB96F31BCC685112ADC8D4DA003;
+			remoteInfo = MKFoundationKit;
+		};
+		96E8BBD5DA1A8B744A2375184B4D0761 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B3F2EB96F31BCC685112ADC8D4DA003;
+			remoteInfo = MKFoundationKit;
+		};
+		B7B67A970F2F708AAB588B6AEA0E8FD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF1258B878BFA89993BC8FEA5ACA97E4;
+			remoteInfo = FrameAccessor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		039016E0517DB08B3B33F4AC98CEAF0C /* FrameAccessor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FrameAccessor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		050782BCF00709730664E1202B19F2D8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09EF63D02BE97ADC487E2C2CED78BC05 /* FrameAccessor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FrameAccessor-dummy.m"; sourceTree = "<group>"; };
+		0B42BDF9CF876BD950128EADC1EEB515 /* NSMutableArray+MK_Misc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+MK_Misc.h"; path = "Source/NSArray/NSMutableArray+MK_Misc.h"; sourceTree = "<group>"; };
+		12D4EB62F8655C4CBA7AC4D818DE6370 /* NSArray+MK_Misc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MK_Misc.h"; path = "Source/NSArray/NSArray+MK_Misc.h"; sourceTree = "<group>"; };
+		13C47A7D9E232188D8B44975D9970D3D /* FrameAccessor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FrameAccessor.framework; path = FrameAccessor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14AB4A48EACE57262287CBEB1BE13ACE /* UIColor+GraphKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+GraphKit.m"; path = "Source/UIColor+GraphKit.m"; sourceTree = "<group>"; };
+		1517FA4F29A79328383C9D68852415C1 /* NSArray+MK_Block.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MK_Block.h"; path = "Source/NSArray/NSArray+MK_Block.h"; sourceTree = "<group>"; };
+		1A8262757435A29F65E99DA6788F2FA4 /* FrameAccessor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FrameAccessor-prefix.pch"; sourceTree = "<group>"; };
+		1B924DA4A3DE5AF23E88CCF3AAD8AE3C /* GKBarGraph.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GKBarGraph.m; path = Source/BarGraph/GKBarGraph.m; sourceTree = "<group>"; };
+		34C5472E74635417B18E29996B4C3130 /* FrameAccessor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FrameAccessor.modulemap; sourceTree = "<group>"; };
+		35A161941DAB046FEB965C15DBF39661 /* GraphKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GraphKit.modulemap; sourceTree = "<group>"; };
+		455D724A7CB591C6D2195125A0775EAD /* Pods-Labb1Swift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Labb1Swift-frameworks.sh"; sourceTree = "<group>"; };
+		4695CA6EEBD440C36AEE4B0F7673F18D /* NSArray+MK_Block.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MK_Block.m"; path = "Source/NSArray/NSArray+MK_Block.m"; sourceTree = "<group>"; };
+		487BC91E560160727A02D55365BEB04C /* NSMutableArray+MK_Queue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+MK_Queue.h"; path = "Source/NSArray/NSMutableArray+MK_Queue.h"; sourceTree = "<group>"; };
+		49DA1E50F0FFA57399750BC110FDA8AA /* MKFoundationKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MKFoundationKit.modulemap; sourceTree = "<group>"; };
+		4EA60F090807C89EF2E61A4994EA5B22 /* Pods-Labb1Swift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Labb1Swift-acknowledgements.plist"; sourceTree = "<group>"; };
+		50954A052223645E143FEAFBB76FF5D6 /* MKFoundationKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKFoundationKit-dummy.m"; sourceTree = "<group>"; };
+		56A6C112676DB0B7445F909B47671846 /* Pods-Labb1Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Labb1Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		59301EA8E869031D2D3F73AF5B283826 /* GKLineGraph.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GKLineGraph.m; path = Source/LineGraph/GKLineGraph.m; sourceTree = "<group>"; };
+		596077014877BAF128EEB5DC256CC75E /* UIColor+GraphKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+GraphKit.h"; path = "Source/UIColor+GraphKit.h"; sourceTree = "<group>"; };
+		59980F82E71AEBE21CF52D67BB49F17C /* Pods-Labb1Swift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Labb1Swift-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6A285583471D718A585854870CD536E6 /* NSMutableArray+MK_Stack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+MK_Stack.h"; path = "Source/NSArray/NSMutableArray+MK_Stack.h"; sourceTree = "<group>"; };
+		6C120F072B1F255A062361ADACF7E056 /* GraphKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GraphKit-umbrella.h"; sourceTree = "<group>"; };
+		76EC39D06E212BDBF4E42DA104F50337 /* MKFoundationKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKFoundationKit-umbrella.h"; sourceTree = "<group>"; };
+		81CC9097438E7F85520ABA2CEFFB1416 /* NSMutableArray+MK_Stack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+MK_Stack.m"; path = "Source/NSArray/NSMutableArray+MK_Stack.m"; sourceTree = "<group>"; };
+		89061F125CD862CB35FEFCEB685D2FBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		89C4FD16DEB9134CE6226CC0D922F15A /* ScrollViewFrameAccessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ScrollViewFrameAccessor.m; path = FrameAccessor/ScrollViewFrameAccessor.m; sourceTree = "<group>"; };
+		8B3997DE1594A4156D2AA98D19514033 /* GraphKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GraphKit-dummy.m"; sourceTree = "<group>"; };
+		8F2C9843206AC08FE13130CE32CDEBB3 /* Pods-Labb1Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Labb1Swift-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D5CABA88BA84C8EF74012BCAE36BA2C /* GraphKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GraphKit.h; path = Source/GraphKit.h; sourceTree = "<group>"; };
+		9E0F4F7A248C4FB72FD29046ABFFE944 /* Pods-Labb1Swift-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Labb1Swift-resources.sh"; sourceTree = "<group>"; };
+		9E1D0F51A4B897C31B3273C97CCBFA60 /* Pods_Labb1Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Labb1Swift.framework; path = "Pods-Labb1Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3CBDDA8815CB87D6D6B01B884F48307 /* FrameAccessor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FrameAccessor.xcconfig; sourceTree = "<group>"; };
+		A6EFC3E8DB3F6FDDC7D65C521D8103C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7B4FAC22C7C462E19DF4C82BC19B606 /* GraphKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GraphKit-prefix.pch"; sourceTree = "<group>"; };
+		AD612EEAB740B94C9D652446AC229F67 /* GraphKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GraphKit.framework; path = GraphKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD85B926ABD6CCC8D71FE1A18585BE24 /* GKBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GKBar.m; path = Source/BarGraph/GKBar.m; sourceTree = "<group>"; };
+		B243E57F6CC512F67FEA08DFAF0C234B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B28AD66BF6E06F5A99F51E64867256E5 /* MKFoundationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MKFoundationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7C3B0AE1EBB8C264A2D26F2F2BF1BB6 /* Pods-Labb1Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Labb1Swift.modulemap"; sourceTree = "<group>"; };
+		B87E04EA4163CCEA83A030EFC911CB86 /* NSArray+MK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MK.h"; path = "Source/NSArray/NSArray+MK.h"; sourceTree = "<group>"; };
+		BAD3811F0146633B53389659E0876B8E /* FrameAccessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FrameAccessor.h; path = FrameAccessor/FrameAccessor.h; sourceTree = "<group>"; };
+		C195055C07FE1E180BA0DA5EBB9376DC /* NSMutableArray+MK_Queue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+MK_Queue.m"; path = "Source/NSArray/NSMutableArray+MK_Queue.m"; sourceTree = "<group>"; };
+		C50137BD6DF2332390EFED341524BB1E /* MKFoundationKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKFoundationKit-prefix.pch"; sourceTree = "<group>"; };
+		C90B612536ED6E6BAE487253061A2EE9 /* GKLineGraph.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GKLineGraph.h; path = Source/LineGraph/GKLineGraph.h; sourceTree = "<group>"; };
+		D285915A249830A579AA0A5CECFA7554 /* NSMutableArray+MK_Misc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+MK_Misc.m"; path = "Source/NSArray/NSMutableArray+MK_Misc.m"; sourceTree = "<group>"; };
+		D399EC3A209944BCC8FDE7443737AFE1 /* MKFoundationKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MKFoundationKit.xcconfig; sourceTree = "<group>"; };
+		D70D7C976D14C3D8858C76A3B1E9855E /* Pods-Labb1Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Labb1Swift.release.xcconfig"; sourceTree = "<group>"; };
+		D9FD65ECE68B2B30C16EB83394701C5F /* GKBarGraph.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GKBarGraph.h; path = Source/BarGraph/GKBarGraph.h; sourceTree = "<group>"; };
+		DFDA6BD533E0F30181E2F9FDE3B0C465 /* NSArray+MK_Misc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MK_Misc.m"; path = "Source/NSArray/NSArray+MK_Misc.m"; sourceTree = "<group>"; };
+		E05F748224D0748DBE9804F5D2D7938C /* GraphKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GraphKit.xcconfig; sourceTree = "<group>"; };
+		E2F25AACC10ED44F24A39DDCB508582F /* FrameAccessor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FrameAccessor-umbrella.h"; sourceTree = "<group>"; };
+		E55DD478A3C5E35DE6608930EA2822F1 /* Pods-Labb1Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Labb1Swift-dummy.m"; sourceTree = "<group>"; };
+		E89FD4DCB642B526674CF0BB4FE8D97F /* ViewFrameAccessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ViewFrameAccessor.m; path = FrameAccessor/ViewFrameAccessor.m; sourceTree = "<group>"; };
+		E922F1549F9BCC8E21F82C99203E3FFA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0B6F8B68A67BCF2772F8E83314D71B5 /* ViewFrameAccessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ViewFrameAccessor.h; path = FrameAccessor/ViewFrameAccessor.h; sourceTree = "<group>"; };
+		F0FA1502281C2345E80979C3D4385805 /* GKBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GKBar.h; path = Source/BarGraph/GKBar.h; sourceTree = "<group>"; };
+		FC5FA4B250B6704218561ACD0CF2D723 /* ScrollViewFrameAccessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ScrollViewFrameAccessor.h; path = FrameAccessor/ScrollViewFrameAccessor.h; sourceTree = "<group>"; };
+		FE392ED6FDCBB1CF978CF2C771CCB73A /* MKFoundationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MKFoundationKit.framework; path = MKFoundationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BBF336AECF14317F2AD6FA16AC68AFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577E25DB7BD4EB6524831CE13BE953DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D1C0C0EFB6DABFC96126C137FEF13D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52151629123855F637CB72BCEA42041E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6023D2A7D36571D6B643E64998B2A983 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B0C4B78A1E349725E670C4B4C1F5FB /* Foundation.framework in Frameworks */,
+				C01D024EFBB23CA5E355C4241B3A9574 /* FrameAccessor.framework in Frameworks */,
+				4FF36D5EE12006792EED583A7CCFA1CA /* MKFoundationKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8800F6722784AAD345E830E48B49785 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				620940CF4E7BA72BAEBE087C7AF02696 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17AEBDFD58DDCFFA8B9068C2DFB69D81 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				89061F125CD862CB35FEFCEB685D2FBD /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		567278B1636D4AAF490C3CEA5194F09A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				34C5472E74635417B18E29996B4C3130 /* FrameAccessor.modulemap */,
+				A3CBDDA8815CB87D6D6B01B884F48307 /* FrameAccessor.xcconfig */,
+				09EF63D02BE97ADC487E2C2CED78BC05 /* FrameAccessor-dummy.m */,
+				1A8262757435A29F65E99DA6788F2FA4 /* FrameAccessor-prefix.pch */,
+				E2F25AACC10ED44F24A39DDCB508582F /* FrameAccessor-umbrella.h */,
+				A6EFC3E8DB3F6FDDC7D65C521D8103C7 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FrameAccessor";
+			sourceTree = "<group>";
+		};
+		5D077453F203210717C8B17784BF972D /* FrameAccessor */ = {
+			isa = PBXGroup;
+			children = (
+				BAD3811F0146633B53389659E0876B8E /* FrameAccessor.h */,
+				FC5FA4B250B6704218561ACD0CF2D723 /* ScrollViewFrameAccessor.h */,
+				89C4FD16DEB9134CE6226CC0D922F15A /* ScrollViewFrameAccessor.m */,
+				F0B6F8B68A67BCF2772F8E83314D71B5 /* ViewFrameAccessor.h */,
+				E89FD4DCB642B526674CF0BB4FE8D97F /* ViewFrameAccessor.m */,
+				567278B1636D4AAF490C3CEA5194F09A /* Support Files */,
+			);
+			name = FrameAccessor;
+			path = FrameAccessor;
+			sourceTree = "<group>";
+		};
+		7BB2B4B50A7735EF1C0311A8B718D4CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				039016E0517DB08B3B33F4AC98CEAF0C /* FrameAccessor.framework */,
+				B28AD66BF6E06F5A99F51E64867256E5 /* MKFoundationKit.framework */,
+				17AEBDFD58DDCFFA8B9068C2DFB69D81 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				7BB2B4B50A7735EF1C0311A8B718D4CA /* Frameworks */,
+				E7EDCCD0F0D58AA812BD0B58E3C7BCF9 /* Pods */,
+				ADD97B050F0AA5D6EC950D6DB6467276 /* Products */,
+				805BF7CE904ADC13DF9312D9B123719C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		805BF7CE904ADC13DF9312D9B123719C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				92611EB974A2957FDD989C2ED6816879 /* Pods-Labb1Swift */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8206512934C70B5ED621FE904CD4EA04 /* MKFoundationKit */ = {
+			isa = PBXGroup;
+			children = (
+				FDE7644CEF1602C67C57B77CF10ADAF2 /* NSArray */,
+				EBCB9BAD85BA2DD53693A5938C6648B1 /* Support Files */,
+			);
+			name = MKFoundationKit;
+			path = MKFoundationKit;
+			sourceTree = "<group>";
+		};
+		92611EB974A2957FDD989C2ED6816879 /* Pods-Labb1Swift */ = {
+			isa = PBXGroup;
+			children = (
+				E922F1549F9BCC8E21F82C99203E3FFA /* Info.plist */,
+				B7C3B0AE1EBB8C264A2D26F2F2BF1BB6 /* Pods-Labb1Swift.modulemap */,
+				59980F82E71AEBE21CF52D67BB49F17C /* Pods-Labb1Swift-acknowledgements.markdown */,
+				4EA60F090807C89EF2E61A4994EA5B22 /* Pods-Labb1Swift-acknowledgements.plist */,
+				E55DD478A3C5E35DE6608930EA2822F1 /* Pods-Labb1Swift-dummy.m */,
+				455D724A7CB591C6D2195125A0775EAD /* Pods-Labb1Swift-frameworks.sh */,
+				9E0F4F7A248C4FB72FD29046ABFFE944 /* Pods-Labb1Swift-resources.sh */,
+				8F2C9843206AC08FE13130CE32CDEBB3 /* Pods-Labb1Swift-umbrella.h */,
+				56A6C112676DB0B7445F909B47671846 /* Pods-Labb1Swift.debug.xcconfig */,
+				D70D7C976D14C3D8858C76A3B1E9855E /* Pods-Labb1Swift.release.xcconfig */,
+			);
+			name = "Pods-Labb1Swift";
+			path = "Target Support Files/Pods-Labb1Swift";
+			sourceTree = "<group>";
+		};
+		ADD97B050F0AA5D6EC950D6DB6467276 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13C47A7D9E232188D8B44975D9970D3D /* FrameAccessor.framework */,
+				AD612EEAB740B94C9D652446AC229F67 /* GraphKit.framework */,
+				FE392ED6FDCBB1CF978CF2C771CCB73A /* MKFoundationKit.framework */,
+				9E1D0F51A4B897C31B3273C97CCBFA60 /* Pods_Labb1Swift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE73C4F246192AE32EA623BCEE7CF97E /* GraphKit */ = {
+			isa = PBXGroup;
+			children = (
+				F0FA1502281C2345E80979C3D4385805 /* GKBar.h */,
+				AD85B926ABD6CCC8D71FE1A18585BE24 /* GKBar.m */,
+				D9FD65ECE68B2B30C16EB83394701C5F /* GKBarGraph.h */,
+				1B924DA4A3DE5AF23E88CCF3AAD8AE3C /* GKBarGraph.m */,
+				C90B612536ED6E6BAE487253061A2EE9 /* GKLineGraph.h */,
+				59301EA8E869031D2D3F73AF5B283826 /* GKLineGraph.m */,
+				9D5CABA88BA84C8EF74012BCAE36BA2C /* GraphKit.h */,
+				596077014877BAF128EEB5DC256CC75E /* UIColor+GraphKit.h */,
+				14AB4A48EACE57262287CBEB1BE13ACE /* UIColor+GraphKit.m */,
+				E0E025A0A60F8B85F76CF30D5AEFBA58 /* Support Files */,
+			);
+			name = GraphKit;
+			path = GraphKit;
+			sourceTree = "<group>";
+		};
+		E0E025A0A60F8B85F76CF30D5AEFBA58 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				35A161941DAB046FEB965C15DBF39661 /* GraphKit.modulemap */,
+				E05F748224D0748DBE9804F5D2D7938C /* GraphKit.xcconfig */,
+				8B3997DE1594A4156D2AA98D19514033 /* GraphKit-dummy.m */,
+				A7B4FAC22C7C462E19DF4C82BC19B606 /* GraphKit-prefix.pch */,
+				6C120F072B1F255A062361ADACF7E056 /* GraphKit-umbrella.h */,
+				B243E57F6CC512F67FEA08DFAF0C234B /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GraphKit";
+			sourceTree = "<group>";
+		};
+		E7EDCCD0F0D58AA812BD0B58E3C7BCF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D077453F203210717C8B17784BF972D /* FrameAccessor */,
+				DE73C4F246192AE32EA623BCEE7CF97E /* GraphKit */,
+				8206512934C70B5ED621FE904CD4EA04 /* MKFoundationKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EBCB9BAD85BA2DD53693A5938C6648B1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				050782BCF00709730664E1202B19F2D8 /* Info.plist */,
+				49DA1E50F0FFA57399750BC110FDA8AA /* MKFoundationKit.modulemap */,
+				D399EC3A209944BCC8FDE7443737AFE1 /* MKFoundationKit.xcconfig */,
+				50954A052223645E143FEAFBB76FF5D6 /* MKFoundationKit-dummy.m */,
+				C50137BD6DF2332390EFED341524BB1E /* MKFoundationKit-prefix.pch */,
+				76EC39D06E212BDBF4E42DA104F50337 /* MKFoundationKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MKFoundationKit";
+			sourceTree = "<group>";
+		};
+		FDE7644CEF1602C67C57B77CF10ADAF2 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				B87E04EA4163CCEA83A030EFC911CB86 /* NSArray+MK.h */,
+				1517FA4F29A79328383C9D68852415C1 /* NSArray+MK_Block.h */,
+				4695CA6EEBD440C36AEE4B0F7673F18D /* NSArray+MK_Block.m */,
+				12D4EB62F8655C4CBA7AC4D818DE6370 /* NSArray+MK_Misc.h */,
+				DFDA6BD533E0F30181E2F9FDE3B0C465 /* NSArray+MK_Misc.m */,
+				0B42BDF9CF876BD950128EADC1EEB515 /* NSMutableArray+MK_Misc.h */,
+				D285915A249830A579AA0A5CECFA7554 /* NSMutableArray+MK_Misc.m */,
+				487BC91E560160727A02D55365BEB04C /* NSMutableArray+MK_Queue.h */,
+				C195055C07FE1E180BA0DA5EBB9376DC /* NSMutableArray+MK_Queue.m */,
+				6A285583471D718A585854870CD536E6 /* NSMutableArray+MK_Stack.h */,
+				81CC9097438E7F85520ABA2CEFFB1416 /* NSMutableArray+MK_Stack.m */,
+			);
+			name = NSArray;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		066441A9050B7614C8E3390E8090EB77 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4395053B942BBC47001525FA950E7F0 /* MKFoundationKit-umbrella.h in Headers */,
+				81DC8CF0E8FC5E462CC56E9E5FA7A5FB /* NSArray+MK.h in Headers */,
+				DD16420C2A6242B30748682ADE31C4ED /* NSArray+MK_Block.h in Headers */,
+				74397C527AC26B8783291116864196AF /* NSArray+MK_Misc.h in Headers */,
+				2DAF7123E4AB08FAB7CA6D0016E428F4 /* NSMutableArray+MK_Misc.h in Headers */,
+				AC6059C048EBF9BEA65B242617204838 /* NSMutableArray+MK_Queue.h in Headers */,
+				8B91F662B0E247D930A8C0003976714D /* NSMutableArray+MK_Stack.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		421CDDDF4A826B98E9F1D6D9C2ADCC15 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D86342D4DEE5D219C9EF8161D036B6C7 /* Pods-Labb1Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C92D4F41C600DB930348B67E4E33609E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14D14E2B0D18B4E2FD2F5BC51F50AFA1 /* FrameAccessor-umbrella.h in Headers */,
+				1C89D5D70D5A1FC57F7BB3A71FD676E0 /* FrameAccessor.h in Headers */,
+				4C37AE2CB013AA961886B578EE13439B /* ScrollViewFrameAccessor.h in Headers */,
+				7590B1A0FA06058423DD9D49E7CDD204 /* ViewFrameAccessor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD2FB146E2492990D1EED429BDA8DA46 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A5FFE3D90E3F74725E34AC0221B7E75 /* GKBar.h in Headers */,
+				2C5F0758383F4AACF40F87315A60DD2B /* GKBarGraph.h in Headers */,
+				BA43566B4D0D882E845469A4092C5A24 /* GKLineGraph.h in Headers */,
+				148B5E5E99903DC610D644FF585A9FA2 /* GraphKit-umbrella.h in Headers */,
+				002F8B606074D81B994194BBC22249F4 /* GraphKit.h in Headers */,
+				B3C1BEDF10E738B99C73719D2065411E /* UIColor+GraphKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		16D2FB21149A0326DAFF1E2A9DD2965E /* Pods-Labb1Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2507CF0F49F31CA29AB8975AA955406A /* Build configuration list for PBXNativeTarget "Pods-Labb1Swift" */;
+			buildPhases = (
+				73ADD317CBF08EFA7F139B95FEE0AB65 /* Sources */,
+				D8800F6722784AAD345E830E48B49785 /* Frameworks */,
+				421CDDDF4A826B98E9F1D6D9C2ADCC15 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9627FFDEAD40AC6FD1CAB01B5F3C1FA8 /* PBXTargetDependency */,
+				697557D08474B9390B0043B6C04049D3 /* PBXTargetDependency */,
+				8D9891320DD3FBA3ADCA0E7BC8A66ED5 /* PBXTargetDependency */,
+			);
+			name = "Pods-Labb1Swift";
+			productName = "Pods-Labb1Swift";
+			productReference = 9E1D0F51A4B897C31B3273C97CCBFA60 /* Pods_Labb1Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4B3F2EB96F31BCC685112ADC8D4DA003 /* MKFoundationKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DCC746D810AB7A875456BD667E0BC57 /* Build configuration list for PBXNativeTarget "MKFoundationKit" */;
+			buildPhases = (
+				6BEB578F0D21AA78A8A7B5C460C38884 /* Sources */,
+				24D1C0C0EFB6DABFC96126C137FEF13D /* Frameworks */,
+				066441A9050B7614C8E3390E8090EB77 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MKFoundationKit;
+			productName = MKFoundationKit;
+			productReference = FE392ED6FDCBB1CF978CF2C771CCB73A /* MKFoundationKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BF1258B878BFA89993BC8FEA5ACA97E4 /* FrameAccessor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2085A6CDDA52452144D5A81369CC4417 /* Build configuration list for PBXNativeTarget "FrameAccessor" */;
+			buildPhases = (
+				E7F5CE66208257FFE07AC949EEE56F8B /* Sources */,
+				1BBF336AECF14317F2AD6FA16AC68AFC /* Frameworks */,
+				C92D4F41C600DB930348B67E4E33609E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FrameAccessor;
+			productName = FrameAccessor;
+			productReference = 13C47A7D9E232188D8B44975D9970D3D /* FrameAccessor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E80A5576C4C60664CB1460BD435D2C66 /* GraphKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9770DEE680043BB2576B435F436F2EB7 /* Build configuration list for PBXNativeTarget "GraphKit" */;
+			buildPhases = (
+				E8BAA4502C3D07B9C1AE43CEA4E407DF /* Sources */,
+				6023D2A7D36571D6B643E64998B2A983 /* Frameworks */,
+				DD2FB146E2492990D1EED429BDA8DA46 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2692FDD342BD043E02A73347C0C4FA57 /* PBXTargetDependency */,
+				4A6ABD9833406B02E70296D35F160F25 /* PBXTargetDependency */,
+			);
+			name = GraphKit;
+			productName = GraphKit;
+			productReference = AD612EEAB740B94C9D652446AC229F67 /* GraphKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = ADD97B050F0AA5D6EC950D6DB6467276 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF1258B878BFA89993BC8FEA5ACA97E4 /* FrameAccessor */,
+				E80A5576C4C60664CB1460BD435D2C66 /* GraphKit */,
+				4B3F2EB96F31BCC685112ADC8D4DA003 /* MKFoundationKit */,
+				16D2FB21149A0326DAFF1E2A9DD2965E /* Pods-Labb1Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BEB578F0D21AA78A8A7B5C460C38884 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C40E00EBA2BD1BB934AC7453E263952D /* MKFoundationKit-dummy.m in Sources */,
+				1E7DCA15F80B5133DAE5D4C6B53020F0 /* NSArray+MK_Block.m in Sources */,
+				03EB08F83FEA373BD2CAE11BBB5ACF86 /* NSArray+MK_Misc.m in Sources */,
+				BCA088C9F633EDFA75A21285F3768A37 /* NSMutableArray+MK_Misc.m in Sources */,
+				53A03668C24FAD1636447B4B494BC6DF /* NSMutableArray+MK_Queue.m in Sources */,
+				4A012DB9A4F03DE529D83B318B680C6C /* NSMutableArray+MK_Stack.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73ADD317CBF08EFA7F139B95FEE0AB65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81A9C547631610148BB6A006588DD6BA /* Pods-Labb1Swift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7F5CE66208257FFE07AC949EEE56F8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDE5109A06DDDE873435D166B76290A6 /* FrameAccessor-dummy.m in Sources */,
+				3A391D3D14A2845BCD33B3DF9B980A94 /* ScrollViewFrameAccessor.m in Sources */,
+				37CF3873E7D4B520CAC457B054A0ED01 /* ViewFrameAccessor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8BAA4502C3D07B9C1AE43CEA4E407DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				200374E3882D88B9D3F755652E24730A /* GKBar.m in Sources */,
+				C744B618AAC6AEFD3310D2590A2CFD8D /* GKBarGraph.m in Sources */,
+				B341E3BD714A17C942E32AE79473EA9A /* GKLineGraph.m in Sources */,
+				F2710292278FB96F34731DF206379BF0 /* GraphKit-dummy.m in Sources */,
+				A4DD728B4AEA4CF4FC7E59F9D87E01D8 /* UIColor+GraphKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2692FDD342BD043E02A73347C0C4FA57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FrameAccessor;
+			target = BF1258B878BFA89993BC8FEA5ACA97E4 /* FrameAccessor */;
+			targetProxy = B7B67A970F2F708AAB588B6AEA0E8FD3 /* PBXContainerItemProxy */;
+		};
+		4A6ABD9833406B02E70296D35F160F25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MKFoundationKit;
+			target = 4B3F2EB96F31BCC685112ADC8D4DA003 /* MKFoundationKit */;
+			targetProxy = 6F888D63657B8A0FB35C772C52FC684A /* PBXContainerItemProxy */;
+		};
+		697557D08474B9390B0043B6C04049D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GraphKit;
+			target = E80A5576C4C60664CB1460BD435D2C66 /* GraphKit */;
+			targetProxy = 004BFB329AD396B196EB68477C084D2E /* PBXContainerItemProxy */;
+		};
+		8D9891320DD3FBA3ADCA0E7BC8A66ED5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MKFoundationKit;
+			target = 4B3F2EB96F31BCC685112ADC8D4DA003 /* MKFoundationKit */;
+			targetProxy = 96E8BBD5DA1A8B744A2375184B4D0761 /* PBXContainerItemProxy */;
+		};
+		9627FFDEAD40AC6FD1CAB01B5F3C1FA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FrameAccessor;
+			target = BF1258B878BFA89993BC8FEA5ACA97E4 /* FrameAccessor */;
+			targetProxy = 044D380B3B1BA161B2DE9B7736562E33 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05AD1895C08417331CE98C91CE7B1257 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3CBDDA8815CB87D6D6B01B884F48307 /* FrameAccessor.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FrameAccessor/FrameAccessor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FrameAccessor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FrameAccessor/FrameAccessor.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FrameAccessor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		242C6C9941BA80446ED36EBACBF3FB32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CA6F28A5FFF09E2BEAA25C4C552C095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E05F748224D0748DBE9804F5D2D7938C /* GraphKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GraphKit/GraphKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GraphKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GraphKit/GraphKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GraphKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5E073A476E0BAF4FA4B7B568CE2979E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E05F748224D0748DBE9804F5D2D7938C /* GraphKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GraphKit/GraphKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GraphKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GraphKit/GraphKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GraphKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BFFFCA1EE594D37B58773EC9CE8D6750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D70D7C976D14C3D8858C76A3B1E9855E /* Pods-Labb1Swift.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Labb1Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Labb1Swift/Pods-Labb1Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Labb1Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D52D498C60DB1CF4D8F9EBC45B6BA980 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D399EC3A209944BCC8FDE7443737AFE1 /* MKFoundationKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MKFoundationKit/MKFoundationKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MKFoundationKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MKFoundationKit/MKFoundationKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MKFoundationKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E7C97D29C5243532143A868A195EE97E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D399EC3A209944BCC8FDE7443737AFE1 /* MKFoundationKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MKFoundationKit/MKFoundationKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MKFoundationKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MKFoundationKit/MKFoundationKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MKFoundationKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E7F2169D8A522827DDD3B49371E4CBB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56A6C112676DB0B7445F909B47671846 /* Pods-Labb1Swift.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Labb1Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Labb1Swift/Pods-Labb1Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Labb1Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EB10C108E296DEB376DFA4B409A568F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FC5F82B6707257A16BDD22095E318A48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3CBDDA8815CB87D6D6B01B884F48307 /* FrameAccessor.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FrameAccessor/FrameAccessor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FrameAccessor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FrameAccessor/FrameAccessor.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FrameAccessor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2085A6CDDA52452144D5A81369CC4417 /* Build configuration list for PBXNativeTarget "FrameAccessor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05AD1895C08417331CE98C91CE7B1257 /* Debug */,
+				FC5F82B6707257A16BDD22095E318A48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2507CF0F49F31CA29AB8975AA955406A /* Build configuration list for PBXNativeTarget "Pods-Labb1Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7F2169D8A522827DDD3B49371E4CBB0 /* Debug */,
+				BFFFCA1EE594D37B58773EC9CE8D6750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB10C108E296DEB376DFA4B409A568F9 /* Debug */,
+				242C6C9941BA80446ED36EBACBF3FB32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DCC746D810AB7A875456BD667E0BC57 /* Build configuration list for PBXNativeTarget "MKFoundationKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D52D498C60DB1CF4D8F9EBC45B6BA980 /* Debug */,
+				E7C97D29C5243532143A868A195EE97E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9770DEE680043BB2576B435F436F2EB7 /* Build configuration list for PBXNativeTarget "GraphKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E073A476E0BAF4FA4B7B568CE2979E5 /* Debug */,
+				4CA6F28A5FFF09E2BEAA25C4C552C095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -10,12 +10,12 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
-    var foodID : Int?
+    var foodID : Int = 34
     var protein : Float?
     var carbohydrates : Float?
     var fat : Float?
     var kcal : Float?
-    var name : String?
+    var name : String = ""
     
     var party : Bool = true
     var favourite : Bool = false
@@ -23,30 +23,29 @@ class ResultViewController: UIViewController {
     var dynamicAnimator : UIDynamicAnimator!
     var gravity : UIGravityBehavior!
     
+    @IBOutlet weak var navigationBar: UINavigationItem!
     @IBOutlet weak var stopPartyButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var discoBall: UIImageView!
-    @IBOutlet weak var navigationBar: UINavigationItem!
 
     @IBOutlet weak var kCalLabel: UILabel!
     @IBOutlet weak var carbLabel: UILabel!
     @IBOutlet weak var proteinLabel: UILabel!
     @IBOutlet weak var fatLabel: UILabel!
-    @IBOutlet weak var textField: UITextView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         getFoodInfo()
         favourite = isFoodFavourite()
         if favourite {
             saveButton.setTitle("Ta bort från favoriter", for: .normal)
         }
-
     }
     
     func getFoodInfo() {
-    let urlString = "http://matapi.se/foodstuff/\(foodID!)"
+    let urlString = "http://matapi.se/foodstuff/\(foodID)"
     var kcalValue : Float?
     var proteinValue : Float?
     var carbohydratesValue : Float?
@@ -99,7 +98,7 @@ class ResultViewController: UIViewController {
         carbLabel.text = "\(carbohydrates!) g/100g"
         proteinLabel.text = "\(protein!) g/100g"
         fatLabel.text = "\(fat!) g/100g"
-        navigationBar.title = "\(name!)"
+        navigationBar.title = "\(name)"
         
         if party {
             UIView.animate(withDuration: 0.25, delay: 0, options: UIViewAnimationOptions.allowUserInteraction, animations: {
@@ -121,9 +120,6 @@ class ResultViewController: UIViewController {
         
     }
 
-    @IBAction func takePhoto(_ sender: UIBarButtonItem) {
-                
-    }
    
    
     @IBAction func saveButtonClicked(_ sender: UIButton) {
@@ -148,7 +144,7 @@ class ResultViewController: UIViewController {
             savedFoodIDs = []
         }
         
-        savedFoodIDs.append(foodID!)
+        savedFoodIDs.append(foodID)
         UserDefaults.standard.set(savedFoodIDs, forKey: "savedFoodIDs")
     }
     
@@ -157,10 +153,10 @@ class ResultViewController: UIViewController {
         if let food = UserDefaults.standard.object(forKey: "savedFoodIDs") as? [Int] {
             savedFoodIDs = food
         } else {
-            savedFoodIDs = [foodID!]
+            savedFoodIDs = [foodID]
         }
         
-        savedFoodIDs = savedFoodIDs.filter{$0 != foodID!}
+        savedFoodIDs = savedFoodIDs.filter{$0 != foodID}
         UserDefaults.standard.set(savedFoodIDs, forKey: "savedFoodIDs")
 
     }
@@ -169,13 +165,16 @@ class ResultViewController: UIViewController {
         let favourites : [Int] = UserDefaults.standard.object(forKey: "savedFoodIDs") as! [Int]
         
         for fav in favourites {
-            if foodID! == fav {
+            if foodID == fav {
                 return true
             }
         }
         
         return false
         
+    }
+    @IBAction func KaPling(_ sender: UIBarButtonItem) {
+        print("Ka-Pling")
     }
     
     @IBAction func stopTheParty(_ sender: UIButton) {
@@ -191,14 +190,23 @@ class ResultViewController: UIViewController {
         stopPartyButton.isHidden = true
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "compareSegue2" {
+            if let resultDestination = segue.destination as? FavouritesTableViewController {
+                resultDestination.compare = true
+                resultDestination.compareID = foodID
+                resultDestination.compareName = name
+            }
+        }
+
     }
-    */
+    
     
 }
