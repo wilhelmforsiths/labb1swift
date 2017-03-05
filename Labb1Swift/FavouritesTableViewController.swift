@@ -18,13 +18,15 @@ class FavouritesTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        favouriteIDs = UserDefaults.standard.object(forKey: "savedFoodIDs") as! [Int]
-        
-        for _ in 1...favouriteIDs.count {
-           favouriteName.append("Loading...")
-            
+        if let array = UserDefaults.standard.object(forKey: "savedFoodIDs") as? [Int] {
+            favouriteIDs = array
+            for _ in 1...favouriteIDs.count {
+                favouriteName.append("Loading...")
+            }
             
         }
+    
+        
         
 
 
@@ -35,9 +37,13 @@ class FavouritesTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     override func viewDidAppear(_ animated: Bool) {
-        favouriteIDs = UserDefaults.standard.object(forKey: "savedFoodIDs") as! [Int]
-        tableView.reloadData()
-    }
+        if let array = UserDefaults.standard.object(forKey: "savedFoodIDs") as? [Int] {
+            favouriteIDs = array
+            tableView.reloadData()
+            }
+            
+        }
+
 
     
     func getFoodName(foodID : Int, index: Int) {

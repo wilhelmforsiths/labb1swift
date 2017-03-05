@@ -165,13 +165,15 @@ class ResultViewController: UIViewController {
     }
     
     func isFoodFavourite() -> Bool {
-        let favourites : [Int] = UserDefaults.standard.object(forKey: "savedFoodIDs") as! [Int]
-        
-        for fav in favourites {
-            if foodID == fav {
-                return true
+        if let favourites = UserDefaults.standard.object(forKey: "savedFoodIDs") as? [Int] {
+            for fav in favourites {
+                if foodID == fav {
+                    return true
+                }
             }
+
         }
+        
         
         return false
         
