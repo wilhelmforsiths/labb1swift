@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1D913F55BEB4CF23A9FEC6A4 /* Pods_Labb1Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 962BFDDF6D0609BA1F0C7178 /* Pods_Labb1Swift.framework */; };
 		A117FAD91E5B376D00FC31B5 /* ResultTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117FAD81E5B376D00FC31B5 /* ResultTableController.swift */; };
+		A13B56841E6C2B5D00974644 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13B56831E6C2B5D00974644 /* PhotoViewController.swift */; };
 		A162B5101E69797D00BA5973 /* CompareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A162B50F1E69797D00BA5973 /* CompareViewController.swift */; };
 		A162B5141E697D5000BA5973 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A162B5131E697D5000BA5973 /* JSONHelper.swift */; };
 		A16FDF1C1E6B790C00CFCAB2 /* FoodFull.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16FDF1B1E6B790C00CFCAB2 /* FoodFull.swift */; };
@@ -60,6 +61,7 @@
 		2860BD02BBBFEF9E69C1BF5C /* Pods-Labb1Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Labb1Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Labb1Swift/Pods-Labb1Swift.release.xcconfig"; sourceTree = "<group>"; };
 		962BFDDF6D0609BA1F0C7178 /* Pods_Labb1Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Labb1Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A117FAD81E5B376D00FC31B5 /* ResultTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableController.swift; sourceTree = "<group>"; };
+		A13B56831E6C2B5D00974644 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		A162B50F1E69797D00BA5973 /* CompareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompareViewController.swift; sourceTree = "<group>"; };
 		A162B5131E697D5000BA5973 /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
 		A16FDF1B1E6B790C00CFCAB2 /* FoodFull.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodFull.swift; sourceTree = "<group>"; };
@@ -96,6 +98,26 @@
 				962BFDDF6D0609BA1F0C7178 /* Pods_Labb1Swift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A13B567D1E6C29C900974644 /* CompareView */ = {
+			isa = PBXGroup;
+			children = (
+				A162B50F1E69797D00BA5973 /* CompareViewController.swift */,
+				A16FDF211E6B7CE400CFCAB2 /* GraphFoodFormatter.swift */,
+				A16FDF1B1E6B790C00CFCAB2 /* FoodFull.swift */,
+			);
+			name = CompareView;
+			sourceTree = "<group>";
+		};
+		A13B56821E6C29F100974644 /* ResultTableView */ = {
+			isa = PBXGroup;
+			children = (
+				A117FAD81E5B376D00FC31B5 /* ResultTableController.swift */,
+				A1F3C2611E5C4F3200225F63 /* Food.swift */,
+				A1F3C2631E5C7BE400225F63 /* FoodTableViewCell.swift */,
+			);
+			name = ResultTableView;
 			sourceTree = "<group>";
 		};
 		A1B934561E6B6D8B00A1AE8C /* Products */ = {
@@ -138,14 +160,11 @@
 				A1F4097F1E55A4940059B4F6 /* Assets.xcassets */,
 				A1F409811E55A4940059B4F6 /* LaunchScreen.storyboard */,
 				A1F409841E55A4940059B4F6 /* Info.plist */,
-				A117FAD81E5B376D00FC31B5 /* ResultTableController.swift */,
-				A1F3C2611E5C4F3200225F63 /* Food.swift */,
-				A1F3C2631E5C7BE400225F63 /* FoodTableViewCell.swift */,
+				A13B56821E6C29F100974644 /* ResultTableView */,
 				A1F23A121E65AB96000DEB3F /* FavouritesTableViewController.swift */,
-				A162B50F1E69797D00BA5973 /* CompareViewController.swift */,
 				A162B5131E697D5000BA5973 /* JSONHelper.swift */,
-				A16FDF1B1E6B790C00CFCAB2 /* FoodFull.swift */,
-				A16FDF211E6B7CE400CFCAB2 /* GraphFoodFormatter.swift */,
+				A13B567D1E6C29C900974644 /* CompareView */,
+				A13B56831E6C2B5D00974644 /* PhotoViewController.swift */,
 			);
 			path = Labb1Swift;
 			sourceTree = "<group>";
@@ -325,6 +344,7 @@
 				A16FDF221E6B7CE400CFCAB2 /* GraphFoodFormatter.swift in Sources */,
 				A1F3C2621E5C4F3200225F63 /* Food.swift in Sources */,
 				A162B5141E697D5000BA5973 /* JSONHelper.swift in Sources */,
+				A13B56841E6C2B5D00974644 /* PhotoViewController.swift in Sources */,
 				A16FDF1C1E6B790C00CFCAB2 /* FoodFull.swift in Sources */,
 				A1F409791E55A4940059B4F6 /* AppDelegate.swift in Sources */,
 				A162B5101E69797D00BA5973 /* CompareViewController.swift in Sources */,

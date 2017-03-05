@@ -10,7 +10,7 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
-    var foodID : Int = 34
+    var foodID : Int = 0
     var protein : Float?
     var carbohydrates : Float?
     var fat : Float?
@@ -203,6 +203,12 @@ class ResultViewController: UIViewController {
                 resultDestination.compare = true
                 resultDestination.compareID = foodID
                 resultDestination.compareName = name
+            }
+        }
+        
+        if segue.identifier == "photoSegue" {
+            if let resultDestination = segue.destination as? PhotoViewController {
+                resultDestination.id = foodID
             }
         }
 

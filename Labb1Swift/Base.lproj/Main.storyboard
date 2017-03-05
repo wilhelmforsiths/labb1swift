@@ -229,6 +229,7 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="KaPling:" destination="mEl-dz-60O" id="Ziz-wq-r2F"/>
+                                <segue destination="hiG-j4-TXA" kind="show" identifier="photoSegue" id="EsI-VR-v0b"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -248,6 +249,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aGM-At-bi3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2357.5999999999999" y="590.55472263868069"/>
+        </scene>
+        <!--Photo View Controller-->
+        <scene sceneID="gWx-9b-bO1">
+            <objects>
+                <viewController id="hiG-j4-TXA" customClass="PhotoViewController" customModule="Labb1Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RlJ-i9-xN8"/>
+                        <viewControllerLayoutGuide type="bottom" id="cab-cK-67H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Oaj-YC-iAZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Zd-ub-966">
+                                <rect key="frame" x="27" y="127" width="320" height="321"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKF-3N-8o0">
+                                <rect key="frame" x="103" y="478" width="168" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Take Photo" backgroundImage="food_logo">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhoto:" destination="hiG-j4-TXA" eventType="touchUpInside" id="xly-hw-eib"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="1Zd-ub-966" id="Xcu-HI-1FC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rnQ-kl-Y1H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3322.4000000000001" y="596.85157421289364"/>
         </scene>
         <!--Compare View Controller-->
         <scene sceneID="z8C-JB-ygw">
@@ -282,8 +321,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Carbs:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhQ-1O-W2b">
-                                <rect key="frame" x="17" y="587" width="67" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kolhydrater:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhQ-1O-W2b">
+                                <rect key="frame" x="17" y="587" width="108" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -365,8 +404,16 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="carbsLabel1" destination="K2b-GG-pGc" id="BTn-qZ-LHF"/>
+                        <outlet property="carbsLabel2" destination="4wc-YH-5hl" id="8Co-9p-XnY"/>
                         <outlet property="compareName1Label" destination="95n-M1-lWq" id="vbl-ua-btE"/>
                         <outlet property="compareName2Label" destination="lfV-af-JSb" id="XHp-1d-cjb"/>
+                        <outlet property="fatLabel1" destination="1Cq-CM-MvI" id="243-Zz-iix"/>
+                        <outlet property="fatLabel2" destination="V1N-8w-UJH" id="QLK-1w-7jY"/>
+                        <outlet property="kCalLabel1" destination="qW9-FI-g6e" id="eGX-ZG-emc"/>
+                        <outlet property="kCalLabel2" destination="m61-iY-oiF" id="xi3-Ue-htM"/>
+                        <outlet property="proteinLabel1" destination="2JD-U7-KHg" id="mRn-X6-70B"/>
+                        <outlet property="proteinLabel2" destination="pkb-oY-LOy" id="WDn-2i-STr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HJh-Hr-kSZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -447,6 +494,7 @@
     </scenes>
     <resources>
         <image name="discoball2" width="1259" height="1600"/>
+        <image name="food_logo" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="0S9-3s-O4q"/>

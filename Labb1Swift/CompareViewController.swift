@@ -21,6 +21,14 @@ class CompareViewController: UIViewController, GKBarGraphDataSource {
     
     @IBOutlet weak var compareName1Label: UILabel!
     @IBOutlet weak var compareName2Label: UILabel!
+    @IBOutlet weak var kCalLabel1: UILabel!
+    @IBOutlet weak var kCalLabel2: UILabel!
+    @IBOutlet weak var proteinLabel1: UILabel!
+    @IBOutlet weak var proteinLabel2: UILabel!
+    @IBOutlet weak var fatLabel1: UILabel!
+    @IBOutlet weak var fatLabel2: UILabel!
+    @IBOutlet weak var carbsLabel1: UILabel!
+    @IBOutlet weak var carbsLabel2: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +43,7 @@ class CompareViewController: UIViewController, GKBarGraphDataSource {
         graph = GKBarGraph(frame: CGRect(x: 0, y: 150, width: self.view.frame.width, height: 200))
         graph!.dataSource = self
         view.addSubview(graph!)
+        graph?.draw()
     }
     override func viewDidAppear(_ animated: Bool) {
         graph?.draw()
@@ -74,6 +83,20 @@ class CompareViewController: UIViewController, GKBarGraphDataSource {
         return barLabels[index]
     }
     
+    func setUpLabelNumbers() {
+        if fullFoods.count > 1 {
+            kCalLabel1.text = "\(fullFoods[0].kcal) kcal/100g"
+            kCalLabel2.text = "\(fullFoods[1].kcal) kcal/100g"
+            proteinLabel1.text = "\(fullFoods[0].protein)%"
+            proteinLabel2.text = "\(fullFoods[1].protein)%"
+            fatLabel1.text = "\(fullFoods[0].fat)%"
+            fatLabel2.text = "\(fullFoods[1].fat)%"
+            carbsLabel1.text = "\(fullFoods[0].carbs)%"
+            carbsLabel2.text = "\(fullFoods[1].carbs)%"
+        }
+        
+    }
+    
     func createFoodFull(foodID: Int, name: String) {
         let urlString = "http://matapi.se/foodstuff/\(foodID)"
             if let safeUrlString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
@@ -98,6 +121,7 @@ class CompareViewController: UIViewController, GKBarGraphDataSource {
                                     
                                     self.fullFoods.append(foodfull)
                                     if foodID == self.compare2 {
+                                        self.setUpLabelNumbers()
                                         self.graph!.draw()
                                     }
                                     
