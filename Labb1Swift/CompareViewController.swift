@@ -18,6 +18,7 @@ class CompareViewController: UIViewController, GKBarGraphDataSource {
     var barLabels = ["kCal", "kCal", "Prot", "Prot", "Fett", "Fett", "Carb", "Carb"]
     var fullFoods : [FoodFull] = []
     var graph : GKBarGraph?
+    let graphFormatter = GraphFoodFormatter()
     
     @IBOutlet weak var compareName1Label: UILabel!
     @IBOutlet weak var compareName2Label: UILabel!
@@ -29,6 +30,8 @@ class CompareViewController: UIViewController, GKBarGraphDataSource {
     @IBOutlet weak var fatLabel2: UILabel!
     @IBOutlet weak var carbsLabel1: UILabel!
     @IBOutlet weak var carbsLabel2: UILabel!
+    @IBOutlet weak var healthLabel1: UILabel!
+    @IBOutlet weak var healthLabel2: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +57,6 @@ class CompareViewController: UIViewController, GKBarGraphDataSource {
     }
     
     public func valueForBar(at index: Int) -> NSNumber! {
-        let graphFormatter = GraphFoodFormatter()
         if fullFoods.count > 1 {
             return NSNumber.init(value: graphFormatter.getFoodCallback(index: index, fullFoods: fullFoods))
         }
@@ -93,6 +95,8 @@ class CompareViewController: UIViewController, GKBarGraphDataSource {
             fatLabel2.text = "\(fullFoods[1].fat)%"
             carbsLabel1.text = "\(fullFoods[0].carbs)%"
             carbsLabel2.text = "\(fullFoods[1].carbs)%"
+            healthLabel1.text = "\(fullFoods[0].healthScore)/5"
+            healthLabel2.text = "\(fullFoods[1].healthScore)/5"
         }
         
     }

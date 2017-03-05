@@ -33,4 +33,21 @@ class GraphFoodFormatter {
         }
         
     }
+    
+    func getHealthScore(kcal: Int, protein: Int, fat: Int, carbs: Int) -> Int {
+        var score = 1
+        if kcal < 150 {
+            score += 1
+        }
+        if protein > 18 {
+            score += 1
+        }
+        if fat < 20 {
+            score += 1
+        }
+        if fat < 5 {
+            score += 1
+        }
+        return score
+    }
 }

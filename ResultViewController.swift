@@ -32,6 +32,7 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var carbLabel: UILabel!
     @IBOutlet weak var proteinLabel: UILabel!
     @IBOutlet weak var fatLabel: UILabel!
+    @IBOutlet weak var healthyLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -94,10 +95,12 @@ class ResultViewController: UIViewController {
     }
 }
     func refreshGUI() {
+        let foodFormater = GraphFoodFormatter()
         kCalLabel.text = "\(kcal!) kcal/100g"
         carbLabel.text = "\(carbohydrates!) g/100g"
         proteinLabel.text = "\(protein!) g/100g"
         fatLabel.text = "\(fat!) g/100g"
+        healthyLabel.text = "\(foodFormater.getHealthScore(kcal: Int(kcal!), protein: Int(protein!), fat: Int(fat!), carbs: Int(carbohydrates!)))/5"
         navigationBar.title = "\(name)"
         
         if party {

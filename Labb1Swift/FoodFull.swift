@@ -15,6 +15,7 @@ struct FoodFull {
     var protein : Int
     var carbs : Int
     var fat : Int
+    var healthScore : Int
     
     init(name: String, iD: Int, kcal: Int, protein: Int, carbs: Int, fat: Int) {
         self.name = name
@@ -23,5 +24,7 @@ struct FoodFull {
         self.protein = protein
         self.carbs = carbs
         self.fat = fat
+        let foodFormatter = GraphFoodFormatter()
+        self.healthScore = foodFormatter.getHealthScore(kcal: kcal, protein: protein, fat: fat, carbs: carbs)
     }
 }

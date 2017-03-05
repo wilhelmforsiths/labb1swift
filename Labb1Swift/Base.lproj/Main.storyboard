@@ -157,6 +157,13 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nyttighet:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75K-hJ-grh">
+                                <rect key="frame" x="28" y="480" width="109" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading..." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEP-1M-sn8">
                                 <rect key="frame" x="198" y="294" width="161" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -219,6 +226,13 @@
                                     <segue destination="QfG-lY-i39" kind="show" identifier="compareSegue2" id="0S9-3s-O4q"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading..." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8N-X6-XJz">
+                                <rect key="frame" x="198" y="480" width="161" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.063234083634097313" green="0.65522742146596857" blue="0.05911518836309871" alpha="1" colorSpace="calibratedRGB"/>
@@ -239,6 +253,7 @@
                         <outlet property="carbLabel" destination="wZl-xc-mGP" id="u6M-WE-D7l"/>
                         <outlet property="discoBall" destination="sYf-y7-AeJ" id="N9h-JV-y1P"/>
                         <outlet property="fatLabel" destination="TPR-7F-2Re" id="HYX-pu-Elf"/>
+                        <outlet property="healthyLabel" destination="Z8N-X6-XJz" id="9Dq-H7-CFI"/>
                         <outlet property="kCalLabel" destination="jEP-1M-sn8" id="B2z-tG-A4s"/>
                         <outlet property="navigationBar" destination="Oty-Ck-gMS" id="daf-GH-Ay7"/>
                         <outlet property="proteinLabel" destination="Ajv-uY-jnT" id="VYS-MS-k5M"/>
@@ -349,6 +364,13 @@
                                 <color key="textColor" red="1" green="0.0072780867240000002" blue="0.092626268070000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKH-FZ-Jn3">
+                                <rect key="frame" x="133" y="431" width="108" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0072780867240000002" blue="0.092626268070000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m61-iY-oiF">
                                 <rect key="frame" x="251" y="470" width="108" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -398,6 +420,20 @@
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nyttighet:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0d3-SY-tqk">
+                                <rect key="frame" x="16" y="431" width="109" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wlP-g8-VP6">
+                                <rect key="frame" x="249" y="431" width="108" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -410,6 +446,8 @@
                         <outlet property="compareName2Label" destination="lfV-af-JSb" id="XHp-1d-cjb"/>
                         <outlet property="fatLabel1" destination="1Cq-CM-MvI" id="243-Zz-iix"/>
                         <outlet property="fatLabel2" destination="V1N-8w-UJH" id="QLK-1w-7jY"/>
+                        <outlet property="healthLabel1" destination="OKH-FZ-Jn3" id="H8n-2Z-4zn"/>
+                        <outlet property="healthLabel2" destination="wlP-g8-VP6" id="enY-kQ-HeA"/>
                         <outlet property="kCalLabel1" destination="qW9-FI-g6e" id="eGX-ZG-emc"/>
                         <outlet property="kCalLabel2" destination="m61-iY-oiF" id="xi3-Ue-htM"/>
                         <outlet property="proteinLabel1" destination="2JD-U7-KHg" id="mRn-X6-70B"/>
